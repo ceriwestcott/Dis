@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:weightSum="1">
+        <ImageView
+            android:layout_height="244dp"
+            app:srcCompat="@drawable/title_image"
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder1" />
+        <TextView
+            android:text="Using the WIG formula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal|bold"
+            android:layout_below="@id/imageView4"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/title_calculation"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/textView9"
+            android:hint="Enter formula indentifier"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:text="@string/first_formula_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_formula_text"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/title_calculation"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/first_input_formula"
+            android:gravity="center_horizontal"
+            android:hint="Enter the first input"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/first_formula_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:background="@android:color/background_light"
+            android:gravity="center_horizontal"
+            android:text="@string/second_formula_message"
+            android:padding="10dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/first_input_formula"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/second_formula_input"
+            android:gravity="center_horizontal"
+            android:hint="Enter Second input"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/textView6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/third_formula_input"
+            android:gravity="center_horizontal"
+            android:hint="Enter Third Input"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/third_input_formula"/>
+
+        <TextView
+            android:text="Multiply by hours?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/third_formula_input"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiply_hours"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@id/textView12"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@id/multiply_hours"
+            android:background="@android:drawable/spinner_dropdown_background"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_calculation"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/add__to_database"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/spinner"/>
+
+        <Button
+            android:text="@string/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formula_back"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/add_calculation"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/third_input_formula"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/third_input_message1"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/second_formula_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</ScrollView>

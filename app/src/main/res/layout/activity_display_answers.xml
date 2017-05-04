@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chevron_answer"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numeric_answer"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:padding="20dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_correct"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="Reveal Answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reveal_answer_button"
+        android:background="@android:drawable/alert_light_frame"
+        android:textColor="@android:color/background_dark" />
+</LinearLayout>

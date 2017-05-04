@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Layout Chooser "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#000" />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radio_Group">
+
+
+    <RadioButton
+        android:text="Chevron - Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_text"
+        android:textColor="@color/colorAccent" />
+
+    <RadioButton
+        android:text="Chevron - Pictorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_pictorial"
+        android:textColor="@color/colorAccent" />
+
+    <RadioButton
+        android:text="Chevron - Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_linear"
+        android:textColor="@color/colorAccent" />
+
+</RadioGroup>
+
+    <Button
+        android:text="Confirm Selection  "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_confirm"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:autoText="true"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>

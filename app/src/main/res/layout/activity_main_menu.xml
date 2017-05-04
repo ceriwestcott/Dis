@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="1">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:weightSum="1">
+
+    <ImageView
+        android:layout_height="244dp"
+        app:srcCompat="@drawable/title_image"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_weight="0.13"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageView"
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp"
+        android:shadowRadius="10" />
+
+    <Button
+        android:text="Add Formula to use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button9"
+        android:background="@android:color/background_light"
+        android:layout_below="@id/button6"
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp"
+        android:shadowRadius="10" />
+
+</RelativeLayout>
+    </ScrollView>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Two Step - One Check</string>
+    <string name="action_settings">Settings</string>
+    <string name="up_button">UP</string>
+    <string name="right_button">Right</string>
+    <string name="left_button">Left</string>
+    <string name="down_button">Down</string>
+    <string name="back">back</string>
+    <string name="add__to_database">Add To Database</string>
+    <string name="first_formula_message">First Field</string>
+    <string name="second_formula_message">Second Input</string>
+    <string name="third_input_message" />
+    <string name="third_input_message1">Third Input</string>
+    <string-array name="measurements">
+        <item>g</item>
+        <item>kg</item>
+        <item>mg</item>
+        <item>µg</item>
+        <item>L</item>
+        <item>cl</item>
+        <item>ml</item>
+        <item>µl</item>
+        <item>mEq</item>
+        <item>m</item>
+        <item>mm</item>
+        <item>cc</item>
+        <item>Drops per Minute</item>
+        <item>Drops per Hour</item>
+    </string-array>
+</resources>
